@@ -11,9 +11,10 @@ user "#{node['linuxbox']['user']}" do
 end
 
 #
-# some extra packages to install
+#  packages to install
 #
-default['linuxbox']['packages']['debian']['editor']     = %w(joe)
+#  debian
+default['linuxbox']['packages']['debian']['editor']     = %w(vim)
 default['linuxbox']['packages']['debian']['build']      = %w(build-essential ssl-cert)
 default['linuxbox']['packages']['debian']['misc']       = %w(nmap apt-transport-https)
 default['linuxbox']['packages']['debian']['docker']     = %w(docker-engine)
