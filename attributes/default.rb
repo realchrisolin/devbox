@@ -20,6 +20,11 @@ default['linuxbox']['packages']['debian']['misc']       = %w(nmap apt-transport-
 default['linuxbox']['packages']['debian']['docker']     = %w(docker-engine)
 default['linuxbox']['packages']['debian']['virtualbox'] = %w(virtualbox)
 
+#  arch
+default['linuxbox']['packages']['arch']['editor']		= %w(vim)
+default['linuxbox']['packages']['arch']['misc']			= %w(nmap tmux)
+default['linuxbox']['packages']['arch']['virtualbox']	= %w(virtualbox)
+
 #
 # ruby
 #
