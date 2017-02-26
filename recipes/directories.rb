@@ -3,9 +3,9 @@
 #
 homedir = case node['platform']
   when 'mac_os_x'
-    "/Users/#{node['devbox']['user']}"
+    "/Users/#{node['linuxbox']['user']}"
   else
-    "/home/#{node['devbox']['user']}"
+    "/home/#{node['linuxbox']['user']}"
 end
 
 directory "#{homedir}/packages"

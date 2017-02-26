@@ -1,10 +1,10 @@
-describe 'devbox::packages' do
+describe 'linuxbox::packages' do
   let(:chef_run) do
     ChefSpec::ServerRunner.new do |node|
       node.automatic['platform'] = 'platform'
-      node.normal['devbox']['packages']['platform']['editor']     = %w(editor_pkg)
-      node.normal['devbox']['packages']['platform']['build']      = %w(build_pkg)
-      node.normal['devbox']['packages']['platform']['misc']       = %w(misc_pkg)
+      node.normal['linuxbox']['packages']['platform']['editor']     = %w(editor_pkg)
+      node.normal['linuxbox']['packages']['platform']['build']      = %w(build_pkg)
+      node.normal['linuxbox']['packages']['platform']['misc']       = %w(misc_pkg)
     end.converge(described_recipe)
   end
 

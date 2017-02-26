@@ -1,4 +1,4 @@
-describe 'devbox::ruby' do
+describe 'linuxbox::ruby' do
   #
   # UNIX tests
   #

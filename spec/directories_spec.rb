@@ -1,4 +1,4 @@
-describe 'devbox::directories' do
+describe 'linuxbox::directories' do
   [
     ['unix', 'home'],
     ['mac_os_x', 'Users']
@@ -7,7 +7,7 @@ describe 'devbox::directories' do
       let(:chef_run) do
         ChefSpec::ServerRunner.new do |node|
           node.automatic['platform'] = platform
-          node.normal['devbox']['user'] = 'user'
+          node.normal['linuxbox']['user'] = 'user'
         end.converge(described_recipe)
       end
 

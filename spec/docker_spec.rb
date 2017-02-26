@@ -1,9 +1,9 @@
-describe 'devbox::docker' do
+describe 'linuxbox::docker' do
   context 'debian' do
     let(:chef_run) do
       ChefSpec::ServerRunner.new do |node|
         node.automatic['platform'] = 'debian'
-        node.normal['devbox']['packages']['debian']['docker'] = %w(docker_pkg)
+        node.normal['linuxbox']['packages']['debian']['docker'] = %w(docker_pkg)
       end.converge(described_recipe)
     end
 
@@ -26,7 +26,7 @@ describe 'devbox::docker' do
     let(:chef_run) do
       ChefSpec::ServerRunner.new do |node|
         node.automatic['platform'] = 'mac_os_x'
-        node.normal['devbox']['packages']['mac_os_x']['docker']   = 'http://example.com/docker_package_url'
+        node.normal['linuxbox']['packages']['mac_os_x']['docker']   = 'http://example.com/docker_package_url'
       end.converge(described_recipe)
     end
 

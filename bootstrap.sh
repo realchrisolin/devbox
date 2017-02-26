@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# bootstrap devbox
+# bootstrap linuxbox
 # debian specific
 #
 CHEFDK_PKG="chefdk_0.17.17-1_amd64.deb"
@@ -41,10 +41,10 @@ chef gem install pkg/chefzero_simple-*.gem
 popd
 
 #
-# set up the devbox
+# set up the linuxbox
 #
-git clone https://github.com/christopherdeutsch/devbox.git
-pushd devbox
+git clone https://github.com/realchrisolin/linuxbox.git
+pushd linuxbox
 chef exec rake chefzero_simple
 popd
 

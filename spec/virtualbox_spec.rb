@@ -1,9 +1,9 @@
-describe 'devbox::virtualbox' do
+describe 'linuxbox::virtualbox' do
   context 'debian' do
     let(:chef_run) do
       ChefSpec::ServerRunner.new do |node|
         node.automatic['platform'] = 'debian'
-        node.normal['devbox']['packages']['debian']['virtualbox'] = %w(virtualbox1 virtualbox2)
+        node.normal['linuxbox']['packages']['debian']['virtualbox'] = %w(virtualbox1 virtualbox2)
       end.converge(described_recipe)
     end
 
@@ -17,7 +17,7 @@ describe 'devbox::virtualbox' do
     let(:chef_run) do
       ChefSpec::ServerRunner.new do |node|
         node.automatic['platform'] = 'mac_os_x'
-        node.normal['devbox']['packages']['mac_os_x']['virtualbox'] = 'http://example.com/virtualbox_uri'
+        node.normal['linuxbox']['packages']['mac_os_x']['virtualbox'] = 'http://example.com/virtualbox_uri'
       end.converge(described_recipe)
     end
 

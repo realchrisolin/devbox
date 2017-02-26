@@ -1,16 +1,16 @@
 #
-# Cookbook Name:: devbox
+# Cookbook Name:: linuxbox
 # Recipe:: default
 #
-# Copyright (C) 2016 Christopher Deutsch
+# Copyright (C) 2016 Chris Olin
 #
-include_recipe 'devbox::directories'
-include_recipe 'devbox::packages'
-include_recipe 'devbox::ruby'
-include_recipe 'devbox::git'
+include_recipe 'linuxbox::directories'
+include_recipe 'linuxbox::packages'
+include_recipe 'linuxbox::ruby'
+include_recipe 'linuxbox::git'
 
 #
 # these are special case installs
 #
-include_recipe 'devbox::virtualbox'
-include_recipe 'devbox::docker'
+include_recipe 'linuxbox::virtualbox'
+include_recipe 'linuxbox::docker'

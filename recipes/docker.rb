@@ -17,7 +17,7 @@ case node['platform']
 
     execute 'apt-get update'
 
-    node['devbox']['packages']['debian']['docker'].each do |pkg|
+    node['linuxbox']['packages']['debian']['docker'].each do |pkg|
       package pkg
     end
 
@@ -26,7 +26,7 @@ case node['platform']
   #
   when 'mac_os_x'
     remote_file 'docker.pkg' do
-      source node['devbox']['packages']['mac_os_x']['docker']
+      source node['linuxbox']['packages']['mac_os_x']['docker']
     end
 
     execute 'install docker' do

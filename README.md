@@ -1,4 +1,4 @@
-# devbox-cookbook
+# linuxbox-cookbook
 
 This cookbook is designed to set up a development workstation or virtual machine
 in one step, using chef-zero. This isn't necessarily something you would use
@@ -12,7 +12,7 @@ on a day-to-day basis (see: test kitchen, chef server, etc.).
 ## Instructions
 
 ```
-wget https://raw.githubusercontent.com/christopherdeutsch/devbox/master/bootstrap.sh && chmod +x bootstrap.sh && su root -c ./bootstrap.sh
+wget https://raw.githubusercontent.com/realchrisolin/linuxbox/master/bootstrap.sh && chmod +x bootstrap.sh && su root -c ./bootstrap.sh
 ```
 
 ## Why?
@@ -38,9 +38,12 @@ Quick rundown:
 1. Uses the [chefzero_simple](https://github.com/christopherdeutsch/chefzero_simple) gem
 to enable running chef-zero locally with minimal hassle
 2. Provides a `bootstrap.sh` shell script to download/install/run everything
-3. Provides a `zero.json` file with the devbox cookbook runlist
+3. Provides a `zero.json` file with the linuxbox cookbook runlist
 
 ## License and Authors
 
-Author:: Christopher Deutsch (chef@ispeakdeutsch.com)
+Author:: Chris Olin (contact@chrisolin.com)
+License:: BSD
+
+Original Author:: Christopher Deutsch (chef@ispeakdeutsch.com)
 License:: BSD
