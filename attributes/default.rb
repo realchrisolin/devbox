@@ -1,14 +1,14 @@
 #
 # attributes
 #
-default['linuxbox']['user']  = 'colin'
-default['linuxbox']['email'] = 'contact@chrisolin.com'
-default['linuxbox']['name']  = 'Chris Olin'
+default['linuxbox']['user']  = 'linuxbox'
+default['linuxbox']['email'] = ''
+default['linuxbox']['name']  = 'Linuxbox Default'
 
-# create user
-user "#{node['linuxbox']['user']}" do
-	action :create
-end
+# create user -- to be moved into a separate recipe in the future
+# user "#{node['linuxbox']['user']}" do
+#	action :create
+#end
 
 #
 #  packages to install
