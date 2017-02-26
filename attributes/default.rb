@@ -7,6 +7,11 @@ default['linuxbox']['user']  = 'colin'
 default['linuxbox']['email'] = 'contact@chrisolin.com'
 default['linuxbox']['name']  = 'Chris Olin'
 
+# create user
+user "#{node['linuxbox']['user']}" do
+	action :create
+end
+
 #
 # some extra packages to install
 #
