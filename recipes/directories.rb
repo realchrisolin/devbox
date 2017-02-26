@@ -8,5 +8,4 @@ homedir = case node['platform']
     "/home/#{node['linuxbox']['user']}"
 end
 
-directory "#{homedir}/packages"
-directory "#{homedir}/src"
+directory "#{homedir}/bin"
