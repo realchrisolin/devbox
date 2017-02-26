@@ -1,8 +1,6 @@
 #
 # attributes
 #
-# just assume user already exists as part of basic OS install
-#
 default['linuxbox']['user']  = 'colin'
 default['linuxbox']['email'] = 'contact@chrisolin.com'
 default['linuxbox']['name']  = 'Chris Olin'
